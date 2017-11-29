@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="AutomatedStateTesting.MainPage">
+	<ContentPage.Content>
+        <StackLayout Padding="10">
+            <Entry Placeholder="Edit Me" Text="{Binding Text}" AutomationId="Text" />
+            <Button Text="{Binding ClickCountText}" Command="{Binding ClickCommand}" AutomationId="Button" />
+        </StackLayout>
+	</ContentPage.Content>
+</ContentPage>
