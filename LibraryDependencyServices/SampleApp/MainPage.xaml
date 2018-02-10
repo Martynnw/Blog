@@ -5,7 +5,8 @@
     Title="Cross Platform Libraries" >
 	<ContentPage.Content>
         <StackLayout Padding="5">
-            <Label x:Name="MainLabel" Text="MainLabel" />
+            <Label x:Name="CultureLabel" />
+            <Label x:Name="TimeLabel" />
         </StackLayout>
 	</ContentPage.Content>
 </ContentPage>

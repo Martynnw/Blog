@@ -65,8 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PlatformStringProvider.cs" />
-    <Compile Include="Initialiser.cs" />
+    <Compile Include="CultureProvider.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

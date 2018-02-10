@@ -21,6 +21,7 @@ namespace SampleApp.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
+            var foo = new SampleLibrary.Droid.CultureProvider();
 
             LoadApplication(new App());
         }

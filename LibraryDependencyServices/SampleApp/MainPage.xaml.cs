@@ -10,8 +10,14 @@ namespace SampleApp
         public MainPage()
         {
             InitializeComponent();
-            var platformStringProvider = DependencyService.Get<IPlatformStringProvider>();
-            MainLabel.Text = platformStringProvider.GetPlatformString();
+
+            var cultureProvider = DependencyService.Get<ICultureProvider>();
+            var culture = cultureProvider.GetCultureString();
+            CultureLabel.Text = $"Culture: {culture}";
+
+            var timeProvider = new TimeProvider();
+            var time = timeProvider.GetTimeString();
+            TimeLabel.Text = $"Time: {time}";
         }
     }
 }

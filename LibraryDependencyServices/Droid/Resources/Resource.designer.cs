@@ -1205,6 +1205,7 @@ namespace SampleApp.Droid
 			global::SampleLibrary.Droid.Resource.String.appbar_scrolling_view_behavior = global::SampleApp.Droid.Resource.String.appbar_scrolling_view_behavior;
 			global::SampleLibrary.Droid.Resource.String.bottom_sheet_behavior = global::SampleApp.Droid.Resource.String.bottom_sheet_behavior;
 			global::SampleLibrary.Droid.Resource.String.character_counter_pattern = global::SampleApp.Droid.Resource.String.character_counter_pattern;
+			global::SampleLibrary.Droid.Resource.String.library_name = global::SampleApp.Droid.Resource.String.library_name;
 			global::SampleLibrary.Droid.Resource.String.mr_button_content_description = global::SampleApp.Droid.Resource.String.mr_button_content_description;
 			global::SampleLibrary.Droid.Resource.String.mr_cast_button_connected = global::SampleApp.Droid.Resource.String.mr_cast_button_connected;
 			global::SampleLibrary.Droid.Resource.String.mr_cast_button_connecting = global::SampleApp.Droid.Resource.String.mr_cast_button_connecting;
@@ -5845,6 +5846,9 @@ namespace SampleApp.Droid
 			
 			// aapt resource value: 0x7f090038
 			public const int character_counter_pattern = 2131296312;
+			
+			// aapt resource value: 0x7f09003e
+			public const int library_name = 2131296318;
 			
 			// aapt resource value: 0x7f090000
 			public const int mr_button_content_description = 2131296256;

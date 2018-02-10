@@ -29,7 +29,8 @@
   <ItemGroup>
     <Compile Include="MyPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="IPlatformStringProvider.cs" />
+    <Compile Include="ICultureProvider.cs" />
+    <Compile Include="TimeProvider.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">

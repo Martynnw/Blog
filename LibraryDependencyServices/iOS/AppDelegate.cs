@@ -13,7 +13,7 @@ namespace SampleApp.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
-            SampleLibrary.iOS.Initialiser.Init();
+            var foo = new SampleLibrary.iOS.CultureProvider();
 
             LoadApplication(new App());
 
