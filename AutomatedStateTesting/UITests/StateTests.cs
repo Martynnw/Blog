@@ -9,7 +9,7 @@ using Xamarin.UITest.Queries;
 
 namespace AutomatedStateTesting.UITests
 {
-    [TestFixture(Platform.Android)]
+  //  [TestFixture(Platform.Android)]
     [TestFixture(Platform.iOS)]
     public class Tests
     {
@@ -21,21 +21,22 @@ namespace AutomatedStateTesting.UITests
             this.platform = platform;
         }
 
-        [Test, Order(1)]
+        [Test]
         public void StateTest()
         {
             app = AppInitializer.StartApp(platform);
+
+            // Set values
             app.Tap("Button");
             app.Tap("Button");
             app.EnterText("Text", "Some text");
 
             SaveAppState();
-        }
 
-        [Test, Order(2)]
-        public void StateTest2()
-        {
+            // Restart the app
             app = AppInitializer.StartApp(platform, true);
+
+            // Verify vlues
             app.WaitForElement("Clicked 2 Times");
             app.WaitForElement(x => x.Marked("Text").Text("Some text"));
         }
