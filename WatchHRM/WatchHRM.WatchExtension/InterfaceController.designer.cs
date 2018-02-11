@@ -13,8 +13,25 @@ namespace WatchHRM.WatchExtension
     [Register ("InterfaceController")]
     partial class InterfaceController
     {
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        WatchKit.WKInterfaceLabel HeartRateLable { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        WatchKit.WKInterfaceLabel TitleLabel { get; set; }
+
         void ReleaseDesignerOutlets ()
         {
+            if (HeartRateLable != null) {
+                HeartRateLable.Dispose ();
+                HeartRateLable = null;
+            }
+
+            if (TitleLabel != null) {
+                TitleLabel.Dispose ();
+                TitleLabel = null;
+            }
         }
     }
 }
