@@ -47,7 +47,10 @@
     <Compile Include="Login.feature.cs">
       <DependentUpon>Login.feature</DependentUpon>
     </Compile>
-    <Compile Include="Steps.cs" />
+    <Compile Include="LoginPageSteps.cs" />
+    <Compile Include="TestPartials.cs" />
+    <Compile Include="MainPageSteps.cs" />
+    <Compile Include="SetupSteps.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
