@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SpecFlowDemo.LoginPage">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SpecFlowDemo.LoginPage" Title="Login" AutomationId="LoginPage">
     <ContentPage.Content>
         <StackLayout Padding="5">
             <Label Text="Username" />
-            <Entry Text="{Binding Username}" />
+            <Entry Text="{Binding Username}" AutomationId="UsernameEntry" />
             <Label Text="Password" />
-            <Entry Text="{Binding Password}" IsPassword="true" />
-            <Button Text="Login" VerticalOptions="EndAndExpand" Command="{Binding LoginCommand}" IsEnabled="{Binding IsNotBusy}" />
+            <Entry Text="{Binding Password}" IsPassword="true" AutomationId="PasswordEntry" />
+            <Button Text="Login" VerticalOptions="EndAndExpand" Command="{Binding LoginCommand}" IsEnabled="{Binding IsNotBusy}" AutomationId="LoginButton" />
             <ActivityIndicator IsVisible="{Binding IsBusy}" IsRunning="{Binding IsBusy}" />
         </StackLayout>
     </ContentPage.Content>
